@@ -1,0 +1,106 @@
+@media screen and (max-width: 1020px) {
+  main h2 {
+    font-size: 48px;
+  }
+
+  main img {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main img {
+    display: none;
+  }
+
+  main form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .hamburger {
+    display: block;
+    z-index: 1000;
+  }
+
+  header ul {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #222222;
+    gap: 60px;
+    transition: .2s ease;
+  }
+
+  header ul.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  header ul li a {
+    font-size: 28px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  main h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header ul li a {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  main p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main form input,
+  main form button {
+    width: 85%;
+  }
+}

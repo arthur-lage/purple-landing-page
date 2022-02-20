@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222222;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+header .hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+header .hamburger i {
+  color: #fff;
+  font-size: 30px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+header ul li {
+  margin: 0 20px;
+}
+
+header ul li a {
+  transition: 0.2s ease;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #840dc9;
+}
+
+header ul li a.cta {
+  border: 2px solid #840dc9;
+  border-radius: 100px;
+  background: transparent;
+  padding: 15px;
+}
+
+header ul li a.cta:hover {
+  color: #fff;
+  background: #840dc9;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 35px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+main h2 {
+  font-size: 56px;
+  line-height: 65px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+main h2 span {
+  color: #840dc9;
+}
+
+main p {
+  line-height: 20px;
+  max-width: 500px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+main article {
+  position: relative;
+  left: 50px;
+}
+
+main img {
+  width: 600px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+main form input {
+  padding: 10px;
+  border-radius: 6px;
+  color: #222222;
+  font-size: 16px;
+  border: 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+main form button {
+  transition: 0.2s ease;
+  color: #fff;
+  background: #840dc9;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 10px;
+  border: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+main form button:hover {
+  filter: brightness(1.2);
+}
+
+#bars-icon,
+#close-icon {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease;
+}
+
+#bars-icon.show,
+#close-icon.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#close-icon {
+  position: relative;
+  right: 22px;
+}
