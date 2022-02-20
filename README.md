@@ -16,6 +16,12 @@ A simple and responsive landing page project.
 - CSS
 - JavaScript
 
+# 🔗 Access the website
+
+If you wish to visit the website, click the link below:
+
+[Purple Landing Page](https://purple-landing-page-al.vercel.app)
+
 # ❔ How to download this project?
 
 ```bash
@@ -25,3 +31,4 @@ cd purple-landing-page
 
 # Open the project using your favorite code editor
 ```
+
